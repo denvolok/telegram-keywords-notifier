@@ -1,0 +1,9 @@
+{
+  "name": "telegram-keywords-notifier-bot",
+  "devDependencies": {
+    "typescript": "5.4.5"
+  },
+  "dependencies": {
+    "grammy": "1.23.1"
+  }
+}
