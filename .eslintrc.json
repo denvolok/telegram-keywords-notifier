@@ -1,0 +1,33 @@
+{
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "project": ["tsconfig.json"],
+    "sourceType": "module"
+  },
+  "plugins": ["import", "@typescript-eslint/eslint-plugin"],
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": ["tsconfig.json"]
+      }
+    }
+  },
+  "extends": [
+    "airbnb-base",
+    "airbnb-typescript/base",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "root": true,
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "rules": {
+    "@typescript-eslint/no-explicit-any": ["warn"],
+    "class-methods-use-this": ["warn"],
+    "import/prefer-default-export": ["off"],
+    "import/no-extraneous-dependencies": ["warn"]
+  }
+}
